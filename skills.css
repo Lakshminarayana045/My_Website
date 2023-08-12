@@ -1,0 +1,182 @@
+
+
+.lucky-skills{ background-image:url('./Images/bg/luc.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+    svg {
+      font: 5.5em 'Montserrat';
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy2 {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 5% 29%;
+    stroke-width: 3px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+    border-bottom: 2px solid red;
+}
+
+.text-copy2:nth-child(1){
+  stroke: blue;
+  animation-delay: -1s;
+}
+
+.text-copy2:nth-child(2){
+  stroke: black;
+  animation-delay: -2s;
+}
+
+.text-copy2:nth-child(3){
+  stroke: blue;
+  animation-delay: -3s;
+}
+
+.text-copy2:nth-child(4){
+  stroke: black;
+  animation-delay: -4s;
+}
+
+.text-copy2:nth-child(5){
+  stroke: blue;
+  animation-delay: -5s;
+}
+
+  @keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+  }
+
+#skills .col{padding: .6em;
+            transform: scale(.98);
+            transition: ease-in-out 0.3s;   }
+
+#skills .col:hover{    background-color:white;
+                    transform: scale(1.0);
+                    cursor: pointer; 
+                border-radius: 50%;   }
+
+
+
+
+    
+  .wrapper {
+    margin-top: -300px;
+    margin-left: 30px;
+    max-width: auto;
+    width: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    font-family: "Poppins", sans-serif;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 45px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  #left{margin-left: -32px; background-color: black;}
+  #right{margin-right: -30px; background-color: black;}
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 350px;
+    list-style: none;
+    background:transparent;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 50px;
+    border: 5px solid blue;
+  }
+  /* 
+  .carousel .card .img {
+    background: #b6c9c7;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  } */
+  .card .img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid black;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 2.1rem;
+    margin: 30px 0 5px;
+    border-bottom: 5px double blue;
+  }
+  .carousel .card span {
+    color: black;
+    font-size: 1.31rem;
+  }
+  .skill-h2{color: black;
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }

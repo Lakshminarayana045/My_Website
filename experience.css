@@ -1,0 +1,17 @@
+.lucky-exp{background-color:whitesmoke;}
+.title5{
+    background-image: linear-gradient(to bottom,red,white);
+    -webkit-background-clip:text ;
+    color: transparent;
+    background-size: 300%;
+    background-position: 100%;
+    animation: heading5 5s infinite alternate-reverse;
+   
+    font-weight: bolder;
+
+}
+    @keyframes heading5{
+    to{
+        background-position: -100%;
+    }
+}

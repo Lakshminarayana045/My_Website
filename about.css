@@ -1,0 +1,102 @@
+ .lucky-about{ background-image:url('./Images/bg/about.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+/*
+    .title1{
+        background-image: linear-gradient(to top, rgb(189, 87, 87),rgb(27, 54, 164),rgb(79, 221, 51));
+        -webkit-background-clip:text ;
+        color: transparent;
+        background-size: 300%;
+        background-position: 100%;
+        animation: heading1 5s infinite alternate-reverse;
+        font-weight: bolder;
+    } 
+        @keyframes heading1{
+        to{
+            background-position: -100%;
+        }
+    } */
+
+    svg {
+        font: 5.5em 'Montserrat';
+        width: 960px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    
+    .text-copy {
+        fill: none;
+        stroke: white;
+        stroke-dasharray: 5% 29%;
+        stroke-width: 3px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 5.5s infinite linear;
+        border-bottom: 2px solid red;
+    }
+    
+    .text-copy:nth-child(1){
+      stroke: blue;
+      animation-delay: -1s;
+    }
+    
+    .text-copy:nth-child(2){
+      stroke: black;
+      animation-delay: -2s;
+    }
+    
+    .text-copy:nth-child(3){
+      stroke: blue;
+      animation-delay: -3s;
+    }
+    
+    .text-copy:nth-child(4){
+      stroke: black;
+      animation-delay: -4s;
+    }
+    
+    .text-copy:nth-child(5){
+      stroke: blue;
+      animation-delay: -5s;
+    }
+
+    
+    @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+    }
+
+    .about-content{
+    /*    background-image: linear-gradient(to right,orange,blue,red); */
+    background-color: black;
+        -webkit-background-clip:text ;
+        color: transparent;
+        background-size: 300%;
+        background-position: 100%;
+        animation: content 30s infinite alternate-reverse;
+        border-bottom: 5px solid blue; 
+        padding: 20px;
+        border-radius: 50px;
+        font-size: 25px;
+        font-weight: bolder;
+        margin-top: -200px;
+    }
+        @keyframes content{
+        to{
+            background-position: -100%;
+        }
+    }
+
+
+    .resume {
+    border-color: blue;
+    border: 5px double blue;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 50px black inset, 0 0 0 0 black;
+    transition: all 180ms ease-in-out;
+    }
+    .resume:hover {
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 10px black;
+    color: black;
+    }

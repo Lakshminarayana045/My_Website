@@ -1,0 +1,24 @@
+.home{ background-image:url('./Images/bg/b4.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+.home-text{color: blue;}
+
+.lucky{
+    background-image: linear-gradient(to right,black,red,white,blue,green ,purple ,yellow,
+    orange,aqua,indigo,brown,coral,pink,black,gray,maroon,navy);
+    -webkit-background-clip:text ;
+    background-color: ;
+    color: transparent;
+    background-size: 300%;
+    background-position: -100%;
+    animation: animatedText 10s infinite alternate-reverse;
+    font-size: 75px;
+    font-weight: bolder;
+}
+@keyframes animatedText{
+    to{
+        background-position: 100%;
+    }
+}
